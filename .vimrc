@@ -15,7 +15,13 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set colorcolumn=80
+
+set clipboard=unnamedplus       "Copy/paste between vim and other programs
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+"always show status line
+set laststatus=2
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -44,3 +50,11 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" Remap splits navigation to just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+
