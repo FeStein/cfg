@@ -5,4 +5,3 @@ restore dot fitles
 
 alias to use config repo:
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
