@@ -22,7 +22,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 "always show status line
 set laststatus=2
 
-
+"use :PlugInstall to install the plugins -> Plug has to be installed first
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
@@ -32,7 +32,8 @@ Plug 'mbbill/undotree'
 Plug 'davidhalter/jedi-vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'ervandew/supertab'
-
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 let g:jedi#use_splits_not_buffers = "right"
