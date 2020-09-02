@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #----------------------------Some Aliasesi------------------------------------
 alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
 alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
