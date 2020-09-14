@@ -16,7 +16,7 @@ set smartcase
 set noswapfile
 set nobackup
 set incsearch
-set colorcolumn=80
+set colorcolumn=80 "sets vertical line at 80 characters
 
 " Sane splits 
 set splitright
@@ -39,20 +39,22 @@ set laststatus=2
 " should be updated, since i dont know if i even need the plugins 
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-fugitive'
-Plug 'mbbill/undotree'
-Plug 'davidhalter/jedi-vim'
-Plug 'tomasiser/vim-code-dark'
-Plug 'ervandew/supertab'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+" Plug 'morhetz/gruvbox'
+" Plug 'jremmen/vim-ripgrep'
+" Plug 'tpope/vim-fugitive'
+" Plug 'mbbill/undotree'
+" Plug 'davidhalter/jedi-vim'
+Plug 'tomasiser/vim-code-dark'              "Vscode dark style
+Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
+Plug 'tpope/vim-surround'
+Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()
 
-let g:jedi#use_splits_not_buffers = "right"
+"Some further configurations for the different Plugins
 
-colorscheme codedark
+colorscheme codedark                        "vscode dark style
+
+let vim_markdown_preview_github=1           "to use grip for markdown preview
 
 " =============================================================================
 "  # Remapping of Keys
