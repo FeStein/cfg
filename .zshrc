@@ -130,6 +130,7 @@ alias push='git push origin'
 alias status='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
+alias diff='git diff'
 
 
 #some keybindings
