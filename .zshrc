@@ -105,12 +105,13 @@ alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-# navigation
+# navigation and general terminal stuff
 alias ..='cd ..' 
 alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
+alias c='clear'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -118,6 +119,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # git
+alias add='git add'
 alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
