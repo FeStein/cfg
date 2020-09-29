@@ -44,10 +44,12 @@ call plug#begin('~/.vim/plugged')
 " Plug 'tpope/vim-fugitive'
 " Plug 'mbbill/undotree'
 " Plug 'davidhalter/jedi-vim'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'tomasiser/vim-code-dark'              "Vscode dark style
 Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
 Plug 'tpope/vim-surround'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'lervag/vimtex'
 call plug#end()
 
 "Some further configurations for the different Plugins
@@ -55,7 +57,7 @@ call plug#end()
 colorscheme codedark                        "vscode dark style
 
 let vim_markdown_preview_github=1           "to use grip for markdown preview
-
+let g:tex_flavor = 'latex'                  "set latex option for vim-tex
 " =============================================================================
 "  # Remapping of Keys
 " =============================================================================
