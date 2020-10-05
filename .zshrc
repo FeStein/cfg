@@ -132,3 +132,19 @@ alias diff='git diff'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/Users/fsteinme/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Users/fsteinme/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/fsteinme/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/fsteinme/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+
