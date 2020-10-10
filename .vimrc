@@ -16,7 +16,7 @@ set smartcase
 set noswapfile
 set nobackup
 set incsearch
-set colorcolumn=80 "sets vertical line at 80 characters
+set colorcolumn=100   "sets vertical line at 80 characters
 
 " Sane splits 
 set splitright
