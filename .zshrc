@@ -129,6 +129,8 @@ alias tag='git tag'
 alias newtag='git tag -a'
 alias diff='git diff'
 
+#make
+alias minimake='make -f minimakefile'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
