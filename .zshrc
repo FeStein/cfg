@@ -132,6 +132,10 @@ alias diff='git diff'
 #make
 alias minimake='make -f minimakefile'
 
+#Simple starting of programms
+alias v='vim'
+alias t='tmux'
+
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
 
