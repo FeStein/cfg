@@ -96,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
+alias tmuxconfig="vim ~/.tmux.conf"
 alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -135,6 +136,7 @@ alias minimake='make -f minimakefile'
 #Simple starting of programms
 alias v='vim'
 alias t='tmux'
+alias o='open'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
