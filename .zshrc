@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+#----------------------------Start Programs---------------------------------------
+alias doxygen='/Users/fsteinme/Programme/doxygen/build/bin/doxygen'
+
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
