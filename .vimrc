@@ -39,12 +39,6 @@ set laststatus=2
 " should be updated, since i dont know if i even need the plugins 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'morhetz/gruvbox'
-" Plug 'jremmen/vim-ripgrep'
-" Plug 'tpope/vim-fugitive'
-" Plug 'mbbill/undotree'
-" Plug 'davidhalter/jedi-vim'
-" Plug 'Valloric/YouCompleteMe'
 Plug 'tomasiser/vim-code-dark'              "Vscode dark style
 Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
 Plug 'tpope/vim-surround'
@@ -58,10 +52,16 @@ colorscheme codedark                        "vscode dark style
 
 let vim_markdown_preview_github=1           "to use grip for markdown preview
 let g:tex_flavor = 'latex'                  "set latex option for vim-tex
+
+" concnojjj
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 " =============================================================================
 "  # Remapping of Keys
 " =============================================================================
-" Ctrl+j and Ctrl+k as Esc -> Ctrl is mapped to caps lock via magnet 
+" Ctrl+j and Ctrl+k as Esc -> Ctrl is mapped to caps lock via magnet/ ducky
+" software
 nnoremap <C-j> <Esc>
 inoremap <C-j> <Esc>
 vnoremap <C-j> <Esc>
@@ -82,17 +82,6 @@ onoremap <C-k> <Esc>
 lnoremap <C-k> <Esc>
 tnoremap <C-k> <Esc>
 
-" jump to start and end of line using the home row keys
-map H ^
-map L $
-
-
-" Remap splits navigation to just CTRL + hjkl
-"nnoremap <C-h> <C-w>h
-"nnoremap <C-j> <C-w>j
-"nnoremap <C-k> <C-w>k
-"nnoremap <C-l> <C-w>l
-
 " No arrow keys --- force yourself to use the home row
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -101,3 +90,13 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+" =============================================================================
+"  # Some definitions for specific files
+" =============================================================================
+
+" Markdown
+autocmd FileType markdown setlocal tw=80
+
+
+" Latex
+autocmd FileType tex setlocal tw=80
