@@ -16,7 +16,11 @@ set smartcase
 set noswapfile
 set nobackup
 set incsearch
-set colorcolumn=100   "sets vertical line at 80 characters
+set colorcolumn=80   "sets vertical line at 80 characters
+
+"normal behavior of backspace
+set backspace=indent,eol,start
+
 
 " Sane splits 
 set splitright
@@ -38,12 +42,14 @@ set laststatus=2
 " use :PlugInstall to install the plugins -> Plug has to be installed first
 " should be updated, since i dont know if i even need the plugins 
 call plug#begin('~/.vim/plugged')
-
 Plug 'tomasiser/vim-code-dark'              "Vscode dark style
 Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
 Plug 'tpope/vim-surround'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'lervag/vimtex'
+Plug 'SirVer/ultisnips'                     "use snippets
+Plug 'honza/vim-snippets'                   "actual snippets, seperate from the engine
+Plug 'vim-airline/vim-airline'              "status bar for vim
 call plug#end()
 
 "Some further configurations for the different Plugins
@@ -53,10 +59,20 @@ colorscheme codedark                        "vscode dark style
 let vim_markdown_preview_github=1           "to use grip for markdown preview
 let g:tex_flavor = 'latex'                  "set latex option for vim-tex
 
-" concnojjj
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+" concno
+nnoremap <C-o> <nop>
+inoremap <C-o> <nop>
+nnoremap <C-i> <nop>
+inoremap <C-i> <nop>
+
+"some powerline behavior stuff
+let g:airline#extensions#tabline#enabled = 1
+
+" using ctrl o/i for trigger and jump to snippets
+let g:UltiSnipsExpandTrigger = '<C-o>'
+let g:UltiSnipsJumpForwardTrigger = '<C-o>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-i>'
+
 " =============================================================================
 "  # Remapping of Keys
 " =============================================================================
