@@ -111,8 +111,10 @@ inoremap <right> <nop>
 " =============================================================================
 
 " Markdown
+autocmd FileType markdown setlocal spell
 autocmd FileType markdown setlocal tw=80
 
 
 " Latex
+autocmd FileType tex setlocal spell
 autocmd FileType tex setlocal tw=80
