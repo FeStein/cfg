@@ -50,6 +50,9 @@ Plug 'lervag/vimtex'
 Plug 'SirVer/ultisnips'                     "use snippets
 Plug 'honza/vim-snippets'                   "actual snippets, seperate from the engine
 Plug 'vim-airline/vim-airline'              "status bar for vim
+Plug 'google/vim-maktaba'                   "auto syntax
+Plug 'google/vim-codefmt'                   "auto syntax
+Plug 'google/vim-glaive'                   "auto syntax
 call plug#end()
 
 "Some further configurations for the different Plugins
@@ -64,6 +67,9 @@ nnoremap <C-o> <nop>
 inoremap <C-o> <nop>
 nnoremap <C-i> <nop>
 inoremap <C-i> <nop>
+
+" remap W to w, in case of wrong captial letter
+:command W w
 
 "some powerline behavior stuff
 let g:airline#extensions#tabline#enabled = 1
@@ -106,6 +112,7 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+
 " =============================================================================
 "  # Some definitions for specific files
 " =============================================================================
@@ -118,3 +125,10 @@ autocmd FileType markdown setlocal tw=80
 " Latex
 autocmd FileType tex setlocal spell
 autocmd FileType tex setlocal tw=80
+
+" C / C++
+autocmd FileType cpp setlocal tabstop=2 softtabstop=2
+autocmd FileType cpp setlocal shiftwidth=2
+
+autocmd FileType c setlocal tabstop=2 softtabstop=2
+autocmd FileType c setlocal shiftwidth=2
