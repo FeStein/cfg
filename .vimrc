@@ -70,6 +70,7 @@ inoremap <C-i> <nop>
 
 " remap W to w, in case of wrong captial letter
 :command W w
+:command Q q
 
 "some powerline behavior stuff
 let g:airline#extensions#tabline#enabled = 1
