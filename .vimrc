@@ -52,7 +52,9 @@ Plug 'honza/vim-snippets'                   "actual snippets, seperate from the 
 Plug 'vim-airline/vim-airline'              "status bar for vim
 Plug 'google/vim-maktaba'                   "auto syntax
 Plug 'google/vim-codefmt'                   "auto syntax
-Plug 'google/vim-glaive'                   "auto syntax
+Plug 'google/vim-glaive'                    "auto syntax
+Plug 'godlygeek/tabular'                    "Github like markdown
+Plug 'plasticboy/vim-markdown'              "Github like markdown
 call plug#end()
 
 "Some further configurations for the different Plugins
