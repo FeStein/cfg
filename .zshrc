@@ -12,8 +12,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-#source the system config containing some paths
-source $HOME/.system/zsh.sh
+#source the system config containing some paths first check if it exists
+if test -f "$HOME/.system/zsh.sh"; then
+    source $HOME/.system/zsh.sh
+fi
 
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
