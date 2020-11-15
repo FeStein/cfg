@@ -3,6 +3,8 @@ export ZSH="/Users/fsteinme/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
+ENABLE_CORRECTION="true"
+
 #Plugins
 plugins=(
     git
@@ -19,11 +21,15 @@ fi
 
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
+alias sysconfig="vim ~/.system/zsh.sh"
 alias vimconfig="vim ~/.vimrc"
 alias tmuxconfig="vim ~/.tmux.conf"
 alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+#some ssh stuff
+alias cubu="ssh felix@192.168.178.20"   #locally connect to my pc
 
 # navigation and general terminal stuff
 alias ..='cd ..' 
