@@ -79,6 +79,14 @@
                     "simple_modifications": [
                         {
                             "from": {
+                                "key_code": "equal_sign"
+                            },
+                            "to": {
+                                "key_code": "non_us_backslash"
+                            }
+                        },
+                        {
+                            "from": {
                                 "key_code": "fn"
                             },
                             "to": {
@@ -95,10 +103,10 @@
                         },
                         {
                             "from": {
-                                "key_code": "equal_sign"
+                                "key_code": "page_down"
                             },
                             "to": {
-                                "key_code": "non_us_backslash"
+                                "key_code": "equal_sign"
                             }
                         }
                     ]
