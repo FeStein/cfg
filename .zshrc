@@ -59,6 +59,7 @@ alias status='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
 alias diff='git diff'
+alias tree='git log --graph --pretty=oneline --abbrev-commit'
 
 #make
 alias minimake='make -f minimakefile'
