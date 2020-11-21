@@ -55,8 +55,8 @@ Plug 'google/vim-codefmt'                   "auto syntax
 Plug 'google/vim-glaive'                    "auto syntax
 Plug 'godlygeek/tabular'                    "Github like markdown
 Plug 'plasticboy/vim-markdown'              "Github like markdown
-#Plug 'ycm-core/YouCompleteMe'
 call plug#end()
+"Plug 'ycm-core/YouCompleteMe'
 
 "Some further configurations for the different Plugins
 
