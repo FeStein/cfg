@@ -414,3 +414,50 @@ snippet ra rightarrow
 # Long right arrow
 snippet lra longrightarrow
 	\\longrightarrow {$0}
+
+
+#--------------------custom snippets----------------------------------------------
+
+snippet template 	
+	\documentclass[12pt,a4paper,pdftex,draft,oneside,halfparskip,parskip=full,smallheadings]{scrbook}
+	\usepackage[utf8]{inputenc}
+	\usepackage[german]{babel}
+	\usepackage[T1]{fontenc}
+	\usepackage{amsmath}
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{graphicx}
+	\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+	%set authors etc.
+	\author{Felix Steinmetz}
+
+	\renewcommand{\chapterheadstartvskip}{\vspace{-30pt}}       %change standard
+	\renewcommand{\chapterheadendvskip}{\vspace{5pt}}       %change standard
+
+	% Make fancy header
+	\usepackage{fancyhdr}
+	\fancyhf{}
+
+	\renewcommand{\chaptermark}[1]{\markboth{\thechapter \ #1}{}} 
+	\fancyhead[ER]{\small{\itshape{\leftmark}}}         
+	\fancyhead[EL]{\small{\pagemark}}                  
+	\fancyhead[OL]{\small{\itshape{\leftmark}}}       
+	\fancyhead[OR]{\small{\pagemark}}                       
+	\renewcommand{\headrulewidth}{0.5pt}                    
+	\setlength{\headsep}{15mm}                             
+	\fancypagestyle{plain}                                  
+
+	%abbreviations
+	\usepackage{acronym}
+
+	\title{My title}
+
+	\begin{document}
+
+	\maketitle
+
+	$0
+	\end{document}
+
+
