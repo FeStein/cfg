@@ -18,6 +18,8 @@ set nobackup
 set incsearch
 set colorcolumn=80   "sets vertical line at 80 characters
 
+set autowriteall    "aut safe when changing buffers
+
 "normal behavior of backspace
 set backspace=indent,eol,start
 
@@ -64,8 +66,6 @@ colorscheme codedark                        "vscode dark style
 
 let vim_markdown_preview_github=1           "to use grip for markdown preview
 let vim_markdown_preview_browser='Google Chrome'
-let vim_markdown_preview_toggle=1
-let vim_markdown_preview_temp_file=1        "remove the temp .html file each time
 let g:vim_markdown_folding_disabled = 1
 
 let g:tex_flavor = 'latex'                  "set latex option for vim-tex
