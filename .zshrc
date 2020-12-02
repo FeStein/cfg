@@ -29,7 +29,7 @@ alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #some ssh stuff
-alias cubu="ssh felix@192.168.178.20"   #locally connect to my pc
+alias cubu="ssh -X felix@192.168.178.20"   #locally connect to my pc
 
 # navigation and general terminal stuff
 alias ..='cd ..' 
@@ -60,6 +60,9 @@ alias tag='git tag'
 alias newtag='git tag -a'
 alias diff='git diff'
 alias tree='git log --graph --pretty=oneline --abbrev-commit'
+
+# fast access to modify snippets
+alias pythonsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/python.snippets'
 
 #make
 alias minimake='make -f minimakefile'
