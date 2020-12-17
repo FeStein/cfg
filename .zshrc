@@ -64,13 +64,11 @@ alias tree='git log --graph --pretty=oneline --abbrev-commit'
 # fast access to modify snippets
 alias pythonsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/python.snippets'
 
-#make
-alias minimake='make -f minimakefile'
-
 #Simple starting of programms
 alias v='vim'
 alias t='tmux'
 alias o='open'
+alias jn='jupyter notebook'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
