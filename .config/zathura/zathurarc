@@ -1,2 +1,32 @@
 set selection-clipboard clipboard
+map i recolor
 
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# One page per row by default
+set pages-per-row 1
+
+#stop at page boundries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+#zoom settings
+set zoom-min 10
+set guioptions ""
+
+# zathurarc-dark
+
+set font "inconsolata 15"
+set default-bg "#e5e5e5" #00
+set default-fg "#F7F7F6" #01
+
+set recolor-lightcolor "#1c1c1c" #00
+set recolor-darkcolor "#d7d7d7" #06
+
+set scroll-step 50
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
