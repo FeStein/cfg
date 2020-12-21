@@ -175,9 +175,9 @@ snippet ni \noindent
 snippet itd description \item
 	\\item[${1:description}] ${0:item}
 snippet figure reference to a figure
-	${1:Figure}~\\ref{${2:fig:}}
+	Fig.~\\ref{${1:fig:}}
 snippet table reference to a table
-	${1:Table}~\\ref{${2:tab:}}
+	Tab.~\\ref{${1:tab:}}
 snippet listing reference to a listing
 	${1:Listing}~\\ref{${2:list}}
 snippet section reference to a section
@@ -195,7 +195,7 @@ snippet citep \citep
 snippet citet \citet
 	\\citet{${1}} ${0}
 snippet cite \cite[]{}
-	\\cite[${1}]{${2}} ${0}
+	~\\cite[${1}]{${2}} ${0}
 snippet citea \citeauthor
 	\\citeauthor{${1}} ${0}
 snippet citey \citeyear
@@ -460,4 +460,10 @@ snippet template
 	$0
 	\end{document}
 
+snippet cb
+	%-------------------Figure------------------------
+	{$0}
+	%-------------------------------------------------
+snippet cl
+	%-------------------------------------------------------------------------------
 

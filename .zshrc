@@ -24,6 +24,7 @@ alias zshconfig="vim ~/.zshrc"
 alias sysconfig="vim ~/.system/zsh.sh"
 alias vimconfig="vim ~/.vimrc"
 alias tmuxconfig="vim ~/.tmux.conf"
+alias zathuraconfig="vim ~/.config/zathura/zathurarc"
 alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -63,6 +64,7 @@ alias tree='git log --graph --pretty=oneline --abbrev-commit'
 
 # fast access to modify snippets
 alias pythonsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/python.snippets'
+alias texsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/tex.snippets'
 
 #Simple starting of programms
 alias v='vim'
