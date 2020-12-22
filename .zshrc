@@ -19,6 +19,9 @@ if test -f "$HOME/.system/zsh.sh"; then
     source $HOME/.system/zsh.sh
 fi
 
+#source functions
+source "$HOME/.config/functions.sh"
+
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
 alias sysconfig="vim ~/.system/zsh.sh"
