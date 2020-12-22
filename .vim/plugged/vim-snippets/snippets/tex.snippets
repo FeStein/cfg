@@ -468,3 +468,17 @@ snippet cb
 snippet cl
 	%-------------------------------------------------------------------------------
 
+snippet align
+	\begin{align}
+	$0
+	\end{align}
+
+snippet svgfig
+	\begin{figure}[bt]                                                                                                                                       
+	\centering                                                                                                                                               
+	\def\svgwidth{\textwidth}                                                                                                                            
+	\fontsize{8pt}{8pt}\selectfont% or whatever fontsize you like                                                                                        
+		\input{figures/folder/file.pdf_tex}                                                                                                                  
+		\caption{some caption
+		\label{fig:short}}                                                                                                                                   
+	\end{figure}    
