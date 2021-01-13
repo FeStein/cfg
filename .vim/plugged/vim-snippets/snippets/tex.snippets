@@ -482,3 +482,51 @@ snippet svgfig
 		\caption{some caption
 		\label{fig:short}}                                                                                                                                   
 	\end{figure}    
+
+snippet textbox
+	\noindent\fbox{
+		\parbox{0.95\textwidth}{
+		$0
+		}
+	}
+
+snippet pngfig
+	\begin{figure}[bt]
+	\centering
+
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics*[width=\textwidth]{figures/name/fig.png}
+	\end{subfigure}
+
+		\caption{some caption
+		\label{fig:short}}
+
+	\end{figure}    
+
+snippet pngfig2
+	\begin{figure}[bt]
+
+	\begin{center}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics*[width=\textwidth]{figures/name/fig.png}\\
+		(a)
+	\end{subfigure}
+
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics*[width=\textwidth]{figures/name/fig.png}\\
+		(b)
+	\end{subfigure}
+	\end{center}
+
+		\caption{some caption
+		\label{fig:short}}
+
+	\end{figure}    
+
+
+
+
+
