@@ -57,6 +57,7 @@ Plug 'google/vim-codefmt'                   "auto syntax
 Plug 'google/vim-glaive'                    "auto syntax
 Plug 'godlygeek/tabular'                    "Github like markdown
 Plug 'plasticboy/vim-markdown'              "Github like markdown
+Plug 'preservim/nerdtree'                   "file tree
 call plug#end()
 "Plug 'ycm-core/YouCompleteMe'
 
@@ -120,6 +121,11 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+"nerdtree
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 
 " =============================================================================

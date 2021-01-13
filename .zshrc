@@ -19,8 +19,6 @@ if test -f "$HOME/.system/zsh.sh"; then
     source $HOME/.system/zsh.sh
 fi
 
-#source functions
-source "$HOME/.config/functions.sh"
 
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
@@ -77,3 +75,6 @@ alias jn='jupyter notebook'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
+
+#----------------------------Functions------------------------------------------
+source "$HOME/.config/functions.sh"
