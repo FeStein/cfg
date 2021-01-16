@@ -18,3 +18,24 @@ function finish {
     config push
 }
 
+
+#Templates
+TEMPLATE_HOME="$HOME/.templates"
+
+function templates {
+    cd $TEMPLATE_HOME
+}
+
+function svgfig {
+    cp -r "$TEMPLATE_HOME/svgfig" "$1"
+    sed -i'.tmp' "s/xxxfolderxxx/$1/g" "$1/fig.tex"
+    cd "$1"
+    rm *.tmp
+}
+
+function pngfig {
+    cp -r "$TEMPLATE_HOME/pngfig" "$1"
+    sed -i'.tmp' "s/xxxfolderxxx/$1/g" "$1/fig.tex"
+    cd "$1"
+    rm *.tmp
+}
