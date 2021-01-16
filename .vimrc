@@ -127,7 +127,8 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-
+" auto correct spellerrors
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 " =============================================================================
 "  # Some definitions for specific files
 " =============================================================================

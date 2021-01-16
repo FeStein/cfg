@@ -39,3 +39,12 @@ function pngfig {
     cd "$1"
     rm *.tmp
 }
+
+function textemplate {
+    cp -r "$TEMPLATE_HOME/textemplate" "$1"
+    cd "$1"
+    git init 
+    git add .
+    git commit -m"Initial commit"
+    echo "Initialized empty latex template and git repo, please add remote repo"
+}
