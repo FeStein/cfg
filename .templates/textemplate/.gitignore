@@ -1,0 +1,26 @@
+#Ignore Latex Temporary Files
+*.aux
+*.bbl
+*.blg
+*.bak
+*.sav
+*.lof
+*.log
+*.lot
+*.out
+thesis.pdf
+*.sub
+*.suc
+*.syc
+*.sym
+*.toc 
+*.synctex.gz
+
+#Ignore bib BackUpFile
+*.bak
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#ignore .html file created by vim markdown preview
+*.html

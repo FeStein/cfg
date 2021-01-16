@@ -1,0 +1,33 @@
+\section*{List of Symbols}
+
+%sonstige commmands
+% d for dx
+\newcommand*\dif{\mathop{}\!\mathrm{d}}
+
+% Eintrag ins Formelverzeichnis
+\newcommand\declare[2]{
+ \begin{tabular}{p{15mm}l}
+  $#1$ & #2\\
+ \end{tabular}
+}
+% Kombinierte Definition von Makros mit Eintrag ins Formelverzeichnis
+\newcommand\define[3]{
+ \newcommand{#1}{#2}
+ \declare{#2}{#3}
+}
+\newcommand\redefine[3]{
+ \renewcommand{#1}{#2}
+ \declare{#2}{#3}
+}
+
+
+\subsection*{Latin Letters}
+ \declare   {B}   {number of bounding boxes detected by a grid cell}\\
+ \define   {\convm}   {\mathbf{C}}		{kernel or convolution matrix}\\
+
+\subsection*{Greek Letters}
+ \declare   {\alpha}   {some angle} \\
+
+\subsection*{Other Denotations}
+ \declare   {Im}   {imaginary value}\\
+
