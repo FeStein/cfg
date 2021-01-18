@@ -48,3 +48,13 @@ function textemplate {
     git commit -m"Initial commit"
     echo "Initialized empty latex template and git repo, please add remote repo"
 }
+
+function pyplot {
+    [[ -z $1 ]] && NAME="plot.py" || NAME="$1.py"
+    if [[ -f $NAME ]]; then
+        echo "Error: Plot script with this name already exists"
+    else
+        cp "$TEMPLATE_HOME/python/plot.py" "$NAME"
+        vim $NAME
+    fi
+}
