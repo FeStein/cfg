@@ -26,6 +26,8 @@ function templates {
     cd $TEMPLATE_HOME
 }
 
+#Latex
+
 function svgfig {
     cp -r "$TEMPLATE_HOME/svgfig" "$1"
     sed -i'.tmp' "s/xxxfolderxxx/$1/g" "$1/fig.tex"
@@ -49,6 +51,8 @@ function textemplate {
     echo "Initialized empty latex template and git repo, please add remote repo"
 }
 
+#Python
+
 function pyplot {
     [[ -z $1 ]] && NAME="plot.py" || NAME="$1.py"
     if [[ -f $NAME ]]; then
@@ -57,4 +61,10 @@ function pyplot {
         cp "$TEMPLATE_HOME/python/plot.py" "$NAME"
         vim $NAME
     fi
+}
+
+#C/C++ 
+function cproj {
+    cp -r "$TEMPLATE_HOME/cproj" "$1"
+    cd "$1"
 }
