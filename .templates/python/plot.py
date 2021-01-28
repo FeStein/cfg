@@ -12,8 +12,8 @@ filename = args["filename"]
 
 #with open(filename,'r') as f: lines = [l.split(',') for l in f]
 
-#x_val= [l[0] for line in f]
-#y_val= [l[1] for line in f]
+#x_val= [line[0] for line in lines]
+#y_val= [line[1] for line in lines]
 
 x_val= [x for x in range(10)]
 y_val= [y for y in range(10)]
