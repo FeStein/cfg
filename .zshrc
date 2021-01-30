@@ -31,7 +31,9 @@ alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #some ssh stuff
-alias cubu="ssh -X felix@192.168.178.20"   #locally connect to my pc
+alias cubu="ssh -X felix@192.168.178.57"   #locally connect to my pc
+alias elwe="ssh -X fsteinme@elwe3.rhrk.uni-kl.de"   #locally connect to my pc
+
 
 # navigation and general terminal stuff
 alias ..='cd ..' 
@@ -47,12 +49,12 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # git
+alias gc='git clone'
 alias add='git add'
 alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
 alias checkout='git checkout'
-alias clone='git clone'
 alias commit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
@@ -64,14 +66,19 @@ alias diff='git diff'
 alias tree='git log --graph --pretty=oneline --abbrev-commit'
 
 # fast access to modify snippets
+alias snip='cd $HOME/.vim/plugged/vim-snippets/snippets'
 alias pythonsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/python.snippets'
 alias texsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/tex.snippets'
+alias cppsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/cpp.snippets'
 
 #Simple starting of programms
 alias v='vim'
 alias t='tmux'
 alias o='open'
+alias z='zathura'
 alias jn='jupyter notebook'
+alias ca='conda activate'
+alias cda='conda deactivate'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
