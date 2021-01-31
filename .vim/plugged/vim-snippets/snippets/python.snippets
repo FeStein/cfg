@@ -42,7 +42,7 @@ snippet awith
 	async with ${1:expr} as ${2:var}:
 		${0:${VISUAL}}
 # New Class
-snippet cl
+snippet class
 	class ${1:ClassName}(${2:object}):
 		"""${3:docstring for $1}"""
 		def __init__(self, ${4:arg}):
@@ -486,7 +486,7 @@ snippet plot
 	plt.plot(${1:x_val},${2:y_val},'-',label='${3:label}')
 
 snippet lbl
-	with open('${0:filename}','r') as f: lines = [l for l in f]
+	with open('${0:filename}','r') as f: lines = [l.strip() for l in f]
 
 snippet argfile
 	import argparse                                                                                                                                          
