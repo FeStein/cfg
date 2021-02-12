@@ -146,3 +146,5 @@ autocmd FileType cpp setlocal shiftwidth=2
 
 autocmd FileType c setlocal tabstop=2 softtabstop=2
 autocmd FileType c setlocal shiftwidth=2
+
+syntax off
