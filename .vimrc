@@ -3,7 +3,6 @@
 " =============================================================================
 
 " some graphical stuff
-syntax on 
 set autoread
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -57,14 +56,8 @@ Plug 'lervag/vimtex'
 Plug 'SirVer/ultisnips'                     "use snippets
 Plug 'honza/vim-snippets'                   "actual snippets, seperate from the engine
 Plug 'vim-airline/vim-airline'              "status bar for vim
-Plug 'google/vim-maktaba'                   "auto syntax
-Plug 'google/vim-codefmt'                   "auto syntax
-Plug 'google/vim-glaive'                    "auto syntax
-Plug 'godlygeek/tabular'                    "Github like markdown
-Plug 'plasticboy/vim-markdown'              "Github like markdown
 Plug 'preservim/nerdtree'                   "file tree
 call plug#end()
-"Plug 'ycm-core/YouCompleteMe'
 
 "Some further configurations for the different Plugins
 
