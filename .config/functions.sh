@@ -66,7 +66,7 @@ function svgcopy {
 function svgpath {
     for f in *.pdf_tex; do
         name=${f%.*}
-        sed -i'.tmp' "s/$name/figures\/$name\/$name//g" $f
+        sed -i'.tmp' "s/$name/figures\/$name\/$name/g" $f
         rm *.tmp
     done
 }
