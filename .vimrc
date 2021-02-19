@@ -92,7 +92,7 @@ let g:airline#extensions#tabline#enabled = 1
 " using ctrl o/i for trigger and jump to snippets
 let g:UltiSnipsExpandTrigger = '<C-o>'
 let g:UltiSnipsJumpForwardTrigger = '<C-o>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-i>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-ü>'
 
 " =============================================================================
 "  # Remapping of Keys
