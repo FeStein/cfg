@@ -1,7 +1,7 @@
 #version 1
 #PREAMBLE
 #newcommand
-snippet nc \newcommand
+snippet nco \newcommand
 	\\newcommand{\\${1:cmd}}[${2:opt}]{${3:realcmd}} ${0}
 #usepackage
 snippet up \usepackage
@@ -218,8 +218,6 @@ snippet sc small caps text
 #Choosing font
 snippet sf sans serife text
 	\\textsf{${1:${VISUAL:text}}}${0}
-snippet rm roman font text
-	\\textrm{${1:${VISUAL:text}}}${0}
 snippet tt typewriter (monospace) text
 	\\texttt{${1:${VISUAL:text}}}${0}
 snippet tsub subscripted text
@@ -527,12 +525,19 @@ snippet pngfig2
 	\end{figure}    
 
 snippet ifig
-	\input{figures/$0/fig}
+	\input{figures/$0/fig} %fig:$0
 
 snippet ac
 	\ac{$1}$2
 
 snippet rm
 	\mathrm{$0}
+
 snippet tit
 	\textit{$0}
+
+snippet nc \newcommand
+	\\newcommand{\\${1:cmd}}{${3:realcmd}} ${0}
+
+snippet ub \underbrace
+	\\underbrace{$0}_{$1}

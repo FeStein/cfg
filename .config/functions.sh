@@ -58,6 +58,26 @@ function textemplate {
     echo "Initialized empty latex template and git repo, please add remote repo"
 }
 
+function svgcopy {
+    cp -r $1 $2
+    cd $2
+    for f in *$1*; do
+        mv $f "${f//$1/$2}"
+    done
+    for f in *.tex; do 
+        sed -i'.tmp' "s/$1/$2/g" $f
+        rm *.tmp
+    done 
+}
+
+function svgpath {
+    for f in *.pdf_tex; do
+        name=${f%.*}
+        sed -i'.tmp' "s/$name/figures\/$name\/$name/g" $f
+        rm *.tmp
+    done
+}
+
 #Python
 
 function pyplot {
