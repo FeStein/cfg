@@ -85,3 +85,4 @@ bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
 
 #----------------------------Functions------------------------------------------
 source "$HOME/.config/functions.sh"
+alias fun="vim $HOME/.config/functions.sh"
