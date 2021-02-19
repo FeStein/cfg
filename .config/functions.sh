@@ -33,6 +33,13 @@ function svgfig {
     sed -i'.tmp' "s/xxxfolderxxx/$1/g" "$1/fig.tex"
     cd "$1"
     rm *.tmp
+    if [[ -f "$TEMPLATE_HOME/inkscapetemplates/$2.svg" ]]; then
+        echo "copy from tempalte $2"
+        cp "$TEMPLATE_HOME/inkscapetemplates/$2.svg" "./$1.svg"
+    else 
+        echo "copy from base template"
+        cp "$TEMPLATE_HOME/inkscapetemplates/none.svg" "./$1.svg"
+    fi
 }
 
 function pngfig {
