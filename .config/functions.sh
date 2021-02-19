@@ -78,6 +78,10 @@ function svgpath {
     done
 }
 
+function svgls {
+    cat "$TEMPLATE_HOME/inkscapetemplates/readme"
+}
+
 #Python
 
 function pyplot {
