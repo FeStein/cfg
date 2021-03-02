@@ -15,9 +15,8 @@ snippet base
 
 	clean:
 		rm -f *.o core.*
-
-	mrproper: clean
 		rm -f $1
+
 # add
 snippet add
 	${1:out}: $1.o
