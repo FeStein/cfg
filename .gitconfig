@@ -1,10 +1,13 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Felix Steinmetz
-	email = fsteinme@rhrk.uni-kl.de
+	email = felix.steinmetz1@gmx.de
 # Please adapt and uncomment the following lines:
 #	name = Felix
 #	email = fsteinme@rhrk.uni-kl.de
 [core]
 	excludesfile = /Users/fsteinme/.gitignore_global
 	editor = vim
+
+[alias]
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
