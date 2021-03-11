@@ -7,7 +7,7 @@ snippet base
 	all: $1
 		./$1
 
-	%.o: %.c
+	%.o: %.cpp
 		$(CC) $(CFLAGS) -c -o $@ $<
 	
 	${1:out}: $1.o
