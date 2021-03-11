@@ -1,8 +1,8 @@
 # base
 snippet base
-	.PHONY: clean, mrproper
+	.PHONY: clean
 	CC = g++
-	CFLAGS = -g -Wall
+	CFLAGS = -g -Wall -std=c++11
 
 	all: $1
 		./$1
