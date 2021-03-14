@@ -63,10 +63,14 @@ Plug 'google/vim-glaive'                    "auto syntax
 Plug 'godlygeek/tabular'                    "Github like markdown
 Plug 'plasticboy/vim-markdown'              "Github like markdown
 Plug 'preservim/nerdtree'                   "file tree
+Plug 'vim-syntastic/syntastic'              "syntax checking
+"Plug 'ycm-core/YouCompleteMe'               "yeah get me an IDE
 call plug#end()
-"Plug 'ycm-core/YouCompleteMe'
 
 "Some further configurations for the different Plugins
+
+"YouCompleteMe
+let g:ycm_key_list_stop_completion = ['<CR>']
 
 colorscheme codedark                        "vscode dark style
 
@@ -94,6 +98,18 @@ let g:UltiSnipsExpandTrigger = '<C-o>'
 let g:UltiSnipsJumpForwardTrigger = '<C-o>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-ü>'
 
+" =============================================================================
+"  # Syntastic settings 
+" =============================================================================
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+
+nnoremap <C-q> :SyntasticCheck<CR>
 " =============================================================================
 "  # Remapping of Keys
 " =============================================================================

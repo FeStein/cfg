@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Felix Steinmetz
-	email = felix.steinmetz1@gmx.de
+	name = FelSt
+	email = 63238040+FeStein@users.noreply.github.com
 # Please adapt and uncomment the following lines:
 #	name = Felix
 #	email = fsteinme@rhrk.uni-kl.de
@@ -11,3 +11,8 @@
 
 [alias]
 	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
