@@ -64,6 +64,7 @@ Plug 'godlygeek/tabular'                    "Github like markdown
 Plug 'plasticboy/vim-markdown'              "Github like markdown
 Plug 'preservim/nerdtree'                   "file tree
 Plug 'vim-syntastic/syntastic'              "syntax checking
+Plug 'neovimhaskell/haskell-vim'
 "Plug 'ycm-core/YouCompleteMe'               "yeah get me an IDE
 call plug#end()
 
