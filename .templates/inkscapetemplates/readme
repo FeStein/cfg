@@ -2,6 +2,7 @@
                         Templates for Inkscape
 --------------------------------------------------------------------------------
 none        - basic empty template 70x70
+fwls        - full width landscape (100 x 210)
 xyvm        - xy coordinate system wiht vertically centered x axis
 xym         - xy coordinate system with centered x axis
 xy          - xy coordinate system
