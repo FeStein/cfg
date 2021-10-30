@@ -145,6 +145,10 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+"jump back
+"nnoremap <C-,> <C-i>
+"nnoremap <C-;> <C-o>
+
 "nerdtree
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
