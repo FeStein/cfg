@@ -2,9 +2,9 @@ file_inhalt=manuscript
 
 all: 	$(file_inhalt).tex 
 	pdflatex $(file_inhalt).tex
-	bibtex $(file_inhalt)
-	pdflatex $(file_inhalt).tex
-	pdflatex $(file_inhalt).tex
+	#bibtex $(file_inhalt)
+	#pdflatex $(file_inhalt).tex
+	#pdflatex $(file_inhalt).tex
 
 mini: 	$(file_inhalt).tex 
 	pdflatex $(file_inhalt).tex
