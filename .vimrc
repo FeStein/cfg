@@ -154,6 +154,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+" use make via ctrl m to quickly compile latex files
+nnoremap <C-m> :make<CR>
+
 " auto correct spellerrors
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 " =============================================================================
