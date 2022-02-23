@@ -1,4 +1,4 @@
-#version 1
+mversion 1
 #PREAMBLE
 #newcommand
 snippet nco \newcommand
@@ -534,15 +534,11 @@ snippet ifig
 
 snippet ac
 	\ac{$1}$2
-
 snippet rm
 	\mathrm{$0}
-
 snippet tit
 	\textit{$0}
-
 snippet nc \newcommand
 	\\newcommand{\\${1:cmd}}{${3:realcmd}} ${0}
-
 snippet ub \underbrace
 	\\underbrace{$0}_{$1}
