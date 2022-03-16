@@ -30,7 +30,7 @@ alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #some ssh stuff
-alias cubu="ssh -X felix@192.168.178.57"   #locally connect to my pc
+alias cubu="ssh -X felix@192.168.178.82"   #locally connect to my pc
 alias elwe="ssh -X fsteinme@elwe3.rhrk.uni-kl.de"   #locally connect to my pc
 alias cwskl="ssh -X hiwi@131.246.27.74"   #connect to the workstation at wskl
 
