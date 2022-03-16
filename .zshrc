@@ -71,6 +71,7 @@ alias snip='cd $HOME/.vim/plugged/vim-snippets/snippets'
 alias pythonsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/python.snippets'
 alias texsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/tex.snippets'
 alias cppsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/cpp.snippets'
+alias mdsnip='vim $HOME/.vim/plugged/vim-snippets/snippets/markdown.snippets'
 
 #Simple starting of programms
 alias v='vim'

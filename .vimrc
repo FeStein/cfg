@@ -178,3 +178,8 @@ autocmd FileType cpp setlocal shiftwidth=2
 
 autocmd FileType c setlocal tabstop=2 softtabstop=2
 autocmd FileType c setlocal shiftwidth=2
+
+"Variables for Snippets 
+let g:snips_author = "Felix Steinmetz"
+let g:snips_email = "fsteinme@rhrk.uni-kl.de"
+let g:snips_github = "github.com/FeStein"
