@@ -13,10 +13,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-#source the system config containing some paths first check if it exists
-if test -f "$HOME/.system/zsh.sh"; then
-    source $HOME/.system/zsh.sh
-fi
 
 
 #----------------------------Some Aliases----------------------------------------
@@ -36,7 +32,7 @@ alias cwskl="ssh -X hiwi@131.246.27.74"   #connect to the workstation at wskl
 
 
 # navigation and general terminal stuff
-alias ..='cd ..' 
+alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
@@ -84,6 +80,11 @@ alias cda='conda deactivate'
 
 #some keybindings
 bindkey '^ ' autosuggest-accept #For acceptence of autocomplete in Terminal
+
+#source the system config containing some paths first check if it exists
+if test -f "$HOME/.system/zsh.sh"; then
+    source $HOME/.system/zsh.sh
+fi
 
 #----------------------------Functions------------------------------------------
 source "$HOME/.config/functions.sh"

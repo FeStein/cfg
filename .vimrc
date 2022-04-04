@@ -3,7 +3,7 @@
 " =============================================================================
 
 " some graphical stuff
-syntax on 
+syntax on
 set autoread
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -24,7 +24,7 @@ set autowriteall    "aut safe when changing buffers
 set backspace=indent,eol,start
 
 
-" Sane splits 
+" Sane splits
 set splitright
 set splitbelow
 
@@ -47,7 +47,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " use :PlugInstall to install the plugins -> Plug has to be installed first
-" should be updated, since i dont know if i even need the plugins 
+" should be updated, since i dont know if i even need the plugins
 call plug#begin('~/.vim/plugged')
 Plug 'tomasiser/vim-code-dark'              "Vscode dark style
 Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
@@ -65,6 +65,7 @@ Plug 'plasticboy/vim-markdown'              "Github like markdown
 Plug 'preservim/nerdtree'                   "file tree
 Plug 'vim-syntastic/syntastic'              "syntax checking
 Plug 'neovimhaskell/haskell-vim'
+Plug 'arcticicestudio/nord-vim'
 "Plug 'ycm-core/YouCompleteMe'               "yeah get me an IDE
 call plug#end()
 
@@ -74,6 +75,7 @@ call plug#end()
 let g:ycm_key_list_stop_completion = ['<CR>']
 
 colorscheme codedark                        "vscode dark style
+"colorscheme nord
 
 let vim_markdown_preview_github=1           "to use grip for markdown preview
 let vim_markdown_preview_browser='Google Chrome'
@@ -100,7 +102,7 @@ let g:UltiSnipsJumpForwardTrigger = '<C-o>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-ü>'
 
 " =============================================================================
-"  # Syntastic settings 
+"  # Syntastic settings
 " =============================================================================
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -179,7 +181,10 @@ autocmd FileType cpp setlocal shiftwidth=2
 autocmd FileType c setlocal tabstop=2 softtabstop=2
 autocmd FileType c setlocal shiftwidth=2
 
-"Variables for Snippets 
+"Variables for Snippets
 let g:snips_author = "Felix Steinmetz"
 let g:snips_email = "fsteinme@rhrk.uni-kl.de"
 let g:snips_github = "github.com/FeStein"
+
+" Delete trailing whitespaces when saving a file
+autocmd BufWritePre * :%s/\s\+$//e

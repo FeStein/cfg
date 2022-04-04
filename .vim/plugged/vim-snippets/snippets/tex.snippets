@@ -1,5 +1,3 @@
-mversion 1
-#PREAMBLE
 #newcommand
 snippet nco \newcommand
 	\\newcommand{\\${1:cmd}}[${2:opt}]{${3:realcmd}} ${0}
@@ -416,7 +414,7 @@ snippet lra longrightarrow
 
 #--------------------custom snippets----------------------------------------------
 
-snippet template 	
+snippet template
 	\documentclass[12pt,a4paper,pdftex,draft,oneside,halfparskip,parskip=full,smallheadings]{scrbook}
 	\usepackage[utf8]{inputenc}
 	\usepackage[german]{babel}
@@ -437,14 +435,14 @@ snippet template
 	\usepackage{fancyhdr}
 	\fancyhf{}
 
-	\renewcommand{\chaptermark}[1]{\markboth{\thechapter \ #1}{}} 
-	\fancyhead[ER]{\small{\itshape{\leftmark}}}         
-	\fancyhead[EL]{\small{\pagemark}}                  
-	\fancyhead[OL]{\small{\itshape{\leftmark}}}       
-	\fancyhead[OR]{\small{\pagemark}}                       
-	\renewcommand{\headrulewidth}{0.5pt}                    
-	\setlength{\headsep}{15mm}                             
-	\fancypagestyle{plain}                                  
+	\renewcommand{\chaptermark}[1]{\markboth{\thechapter \ #1}{}}
+	\fancyhead[ER]{\small{\itshape{\leftmark}}}
+	\fancyhead[EL]{\small{\pagemark}}
+	\fancyhead[OL]{\small{\itshape{\leftmark}}}
+	\fancyhead[OR]{\small{\pagemark}}
+	\renewcommand{\headrulewidth}{0.5pt}
+	\setlength{\headsep}{15mm}
+	\fancypagestyle{plain}
 
 	%abbreviations
 	\usepackage{acronym}
@@ -477,14 +475,14 @@ snippet a*
 	\end{align*}
 
 snippet svgfig
-	\begin{figure}[bt]                                                                                                                                       
-	\centering                                                                                                                                               
-	\def\svgwidth{\textwidth}                                                                                                                            
-	\fontsize{8pt}{8pt}\selectfont% or whatever fontsize you like                                                                                        
-		\input{figures/folder/file.pdf_tex}                                                                                                                  
+	\begin{figure}[bt]
+	\centering
+	\def\svgwidth{\textwidth}
+	\fontsize{8pt}{8pt}\selectfont% or whatever fontsize you like
+		\input{figures/folder/file.pdf_tex}
 		\caption{some caption
-		\label{fig:short}}                                                                                                                                   
-	\end{figure}    
+		\label{fig:short}}
+	\end{figure}
 
 snippet tbox
 	\noindent\fbox{
@@ -505,7 +503,7 @@ snippet pngfig
 		\caption{some caption
 		\label{fig:short}}
 
-	\end{figure}    
+	\end{figure}
 
 snippet pngfig2
 	\begin{figure}[bt]
@@ -527,7 +525,7 @@ snippet pngfig2
 		\caption{some caption
 		\label{fig:short}}
 
-	\end{figure}    
+	\end{figure}
 
 snippet ifig
 	\input{figures/$0/fig} %fig:$0

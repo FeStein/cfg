@@ -489,20 +489,20 @@ snippet lbl
 	with open('${0:filename}','r') as f: lines = [l.strip() for l in f]
 
 snippet argfile
-	import argparse                                                                                                                                          
-																																							   
-	ap = argparse.ArgumentParser()                                                                                                                           
-	ap.add_argument("-f", "--filename", required=False, type=str, default='.',                                                                                         
-					help="path to file")                                                                                                                     
-																																							  
-	args = vars(ap.parse_args())                                                                                                                             
-	filename = args["filename"] 
+	import argparse
+
+	ap = argparse.ArgumentParser()
+	ap.add_argument("-f", "--filename", required=False, type=str, default='.',
+					help="path to file")
+
+	args = vars(ap.parse_args())
+	filename = args["filename"]
 snippet argparse
 	import argparse
 
-	ap = argparse.ArgumentParser()                                                                                                                           
-	ap.add_argument("-f", "--filename", required=False, type=str, default='.',                                                                                         
-					help="path to file")                                                                                                                     
+	ap = argparse.ArgumentParser()
+	ap.add_argument("-f", "--filename", required=False, type=str, default='.',
+					help="path to file")
 snippet cl
 	################################################################################
 snippet cb
