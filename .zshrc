@@ -64,7 +64,7 @@ alias status='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
 alias diff='git diff'
-alias tree='git log --graph --pretty=oneline --abbrev-commit'
+alias tree='git log --all --graph --oneline --date=short --abbrev=commit --pretty=format:"%C(yellow)%h%Creset%C(red)%C(bold)%d%Creset%C(white)(%cd)%Creset %s"'
 
 # fast access to modify snippets
 alias snip='cd $HOME/.vim/plugged/vim-snippets/snippets'
