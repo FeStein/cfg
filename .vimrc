@@ -3,7 +3,7 @@
 " =============================================================================
 
 " some graphical stuff
-syntax on 
+syntax on
 set autoread
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -24,7 +24,7 @@ set autowriteall    "aut safe when changing buffers
 set backspace=indent,eol,start
 
 
-" Sane splits 
+" Sane splits
 set splitright
 set splitbelow
 
@@ -47,7 +47,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " use :PlugInstall to install the plugins -> Plug has to be installed first
-" should be updated, since i dont know if i even need the plugins 
+" should be updated, since i dont know if i even need the plugins
 call plug#begin('~/.vim/plugged')
 Plug 'tomasiser/vim-code-dark'              "Vscode dark style
 Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
@@ -100,7 +100,7 @@ let g:UltiSnipsJumpForwardTrigger = '<C-o>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-ü>'
 
 " =============================================================================
-"  # Syntastic settings 
+"  # Syntastic settings
 " =============================================================================
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -155,7 +155,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " use make via ctrl m to quickly compile latex files
-nnoremap <C-m> :make<CR>
+" nnoremap <C-m> :make<CR>
 
 " auto correct spellerrors
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -179,7 +179,10 @@ autocmd FileType cpp setlocal shiftwidth=2
 autocmd FileType c setlocal tabstop=2 softtabstop=2
 autocmd FileType c setlocal shiftwidth=2
 
-"Variables for Snippets 
+"Variables for Snippets
 let g:snips_author = "Felix Steinmetz"
 let g:snips_email = "fsteinme@rhrk.uni-kl.de"
 let g:snips_github = "github.com/FeStein"
+
+"auto delete trailing white spaces
+autocmd BufWritePre * :%s/\s\+$//e
