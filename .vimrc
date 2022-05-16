@@ -157,7 +157,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " use make via ctrl m to quickly compile latex files
-nnoremap <C-m> :make<CR>
+" nnoremap <C-m> :make<CR>
+nnoremap <C-m> <ESC>
 
 " auto correct spellerrors
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -186,5 +187,5 @@ let g:snips_author = "Felix Steinmetz"
 let g:snips_email = "fsteinme@rhrk.uni-kl.de"
 let g:snips_github = "github.com/FeStein"
 
-" Delete trailing whitespaces when saving a file
+"auto delete trailing white spaces
 autocmd BufWritePre * :%s/\s\+$//e
