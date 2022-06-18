@@ -37,6 +37,9 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 "always show status line
 set laststatus=2
 
+" set updatetime to 100ms instead of default 4000ms -> affects git for example
+set updatetime=100
+
 " =============================================================================
 "  # Install of Plugins
 " =============================================================================
@@ -66,6 +69,7 @@ Plug 'preservim/nerdtree'                   "file tree
 Plug 'vim-syntastic/syntastic'              "syntax checking
 Plug 'neovimhaskell/haskell-vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'airblade/vim-gitgutter'
 "Plug 'ycm-core/YouCompleteMe'               "yeah get me an IDE
 call plug#end()
 

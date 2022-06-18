@@ -503,6 +503,8 @@ snippet argparse
 	ap = argparse.ArgumentParser()
 	ap.add_argument("-f", "--filename", required=False, type=str, default='.',
 					help="path to file")
+	args = ap.parse_args()
+	print(args.filename)
 snippet cl
 	################################################################################
 snippet cb
