@@ -7,6 +7,41 @@ function start {
 
 }
 
+function vqn {
+    #check if argument isnt null
+    if [ -z "$1" ]
+        then
+            fn="quick"
+        else
+            fn=$1
+    fi
+    if [[ -f "$OBSIDIAN_PATH/quicknotes/$fn.md" ]]; then
+        vim "$OBSIDIAN_PATH/quicknotes/$fn.md"
+    else
+        echo "Copy quicknote template from templates foldr"
+        cp "$TEMPLATE_HOME/notes/quicknote.md" "$OBSIDIAN_PATH/quicknotes/$fn.md"
+        sed -i '' "s/TITLE/$fn/g" "$OBSIDIAN_PATH/quicknotes/$fn.md"
+        vim "$OBSIDIAN_PATH/quicknotes/$fn.md"
+    fi
+}
+
+function lqn {
+    #check if argument isnt null
+    if [ -z "$1" ]
+        then
+            fn="quick"
+        else
+            fn=$1
+    fi
+    if [[ -f "$OBSIDIAN_PATH/quicknotes/$fn.md" ]]; then
+        lw_editor "$OBSIDIAN_PATH/quicknotes/$fn.md"
+    else
+        echo "Copy quicknote template from templates foldr"
+        cp "$TEMPLATE_HOME/notes/quicknote.md" "$OBSIDIAN_PATH/quicknotes/$fn.md"
+        sed -i '' "s/TITLE/$fn/g" "$OBSIDIAN_PATH/quicknotes/$fn.md"
+        lw_editor "$OBSIDIAN_PATH/quicknotes/$fn.md"
+    fi
+}
 
 #automatically push my relevant git repos
 function finish {
@@ -19,8 +54,6 @@ function finish {
 }
 
 
-#Templates
-TEMPLATE_HOME="$HOME/.templates"
 
 function templates {
     cd $TEMPLATE_HOME
@@ -36,7 +69,7 @@ function svgfig {
     if [[ -f "$TEMPLATE_HOME/inkscapetemplates/$2.svg" ]]; then
         echo "copy from tempalte $2"
         cp "$TEMPLATE_HOME/inkscapetemplates/$2.svg" "./$1.svg"
-    else 
+    else
         echo "copy from base template"
         cp "$TEMPLATE_HOME/inkscapetemplates/none.svg" "./$1.svg"
     fi
@@ -52,7 +85,7 @@ function pngfig {
 function textemplate {
     cp -r "$TEMPLATE_HOME/textemplate" "$1"
     cd "$1"
-    git init 
+    git init
     git add .
     git commit -m"Initial commit"
     echo "Initialized empty latex template and git repo, please add remote repo"
@@ -64,10 +97,10 @@ function svgcopy {
     for f in *$1*; do
         mv $f "${f//$1/$2}"
     done
-    for f in *.tex; do 
+    for f in *.tex; do
         sed -i'.tmp' "s/$1/$2/g" $f
         rm *.tmp
-    done 
+    done
 }
 
 function svgpath {
@@ -94,7 +127,7 @@ function pyplot {
     fi
 }
 
-#C/C++ 
+#C/C++
 function cproj {
     cp -r "$TEMPLATE_HOME/cproj" "$1"
     cd "$1"

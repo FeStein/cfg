@@ -3,7 +3,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-
 #Plugins
 plugins=(
     git
@@ -12,8 +11,6 @@ plugins=(
     )
 
 source $ZSH/oh-my-zsh.sh
-
-
 
 #----------------------------Some Aliases----------------------------------------
 alias zshconfig="vim ~/.zshrc"
@@ -87,5 +84,14 @@ if test -f "$HOME/.system/zsh.sh"; then
 fi
 
 #----------------------------Functions------------------------------------------
-source "$HOME/.config/functions.sh"
+if test -f "$HOME/.config/config.env"; then
+        source $HOME/.config/config.env
+    else
+        echo "care config.env missing, system not properly configured"
+fi
+
+if test -f "$HOME/.config/functions.sh"; then
+    source $HOME/.config/functions.sh
+fi
+
 alias fun="vim $HOME/.config/functions.sh"
