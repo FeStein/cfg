@@ -15,13 +15,13 @@ function vqn {
         else
             fn=$1
     fi
-    if [[ -f "$OBSIDIAN_PATH/quicknotes/$fn.md" ]]; then
-        vim "$OBSIDIAN_PATH/quicknotes/$fn.md"
+    if [[ -f "$OBSIDIAN_PATH/Quicknotes/$fn.md" ]]; then
+        vim "$OBSIDIAN_PATH/Quicknotes/$fn.md"
     else
         echo "Copy quicknote template from templates foldr"
-        cp "$TEMPLATE_HOME/notes/quicknote.md" "$OBSIDIAN_PATH/quicknotes/$fn.md"
-        sed -i '' "s/TITLE/$fn/g" "$OBSIDIAN_PATH/quicknotes/$fn.md"
-        vim "$OBSIDIAN_PATH/quicknotes/$fn.md"
+        cp "$TEMPLATE_HOME/notes/quicknote.md" "$OBSIDIAN_PATH/Quicknotes/$fn.md"
+        sed -i "s/TITLE/$fn/g" "$OBSIDIAN_PATH/Quicknotes/$fn.md"
+        vim "$OBSIDIAN_PATH/Quicknotes/$fn.md"
     fi
 }
 
@@ -33,13 +33,13 @@ function lqn {
         else
             fn=$1
     fi
-    if [[ -f "$OBSIDIAN_PATH/quicknotes/$fn.md" ]]; then
-        lw_editor "$OBSIDIAN_PATH/quicknotes/$fn.md"
+    if [[ -f "$OBSIDIAN_PATH/1uicknotes/$fn.md" ]]; then
+        lw_editor "$OBSIDIAN_PATH/Quicknotes/$fn.md"
     else
-        echo "Copy quicknote template from templates foldr"
-        cp "$TEMPLATE_HOME/notes/quicknote.md" "$OBSIDIAN_PATH/quicknotes/$fn.md"
-        sed -i '' "s/TITLE/$fn/g" "$OBSIDIAN_PATH/quicknotes/$fn.md"
-        lw_editor "$OBSIDIAN_PATH/quicknotes/$fn.md"
+        echo "Copy quicknote template from templates folder"
+        cp "$TEMPLATE_HOME/notes/quicknote.md" "$OBSIDIAN_PATH/Quicknotes/$fn.md"
+        sed -i "s/TITLE/$fn/g" "$OBSIDIAN_PATH/Quicknotes/$fn.md"
+        lw_editor "$OBSIDIAN_PATH/Quicknotes/$fn.md"
     fi
 }
 
