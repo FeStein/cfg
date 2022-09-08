@@ -1,12 +1,8 @@
-# This is Git's per-user configuration file.
 [user]
 	name = FelSt
 	email = 63238040+FeStein@users.noreply.github.com
-# Please adapt and uncomment the following lines:
-#	name = Felix
-#	email = fsteinme@rhrk.uni-kl.de
 [core]
-	excludesfile = /Users/fsteinme/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = vim
 
 [alias]
