@@ -21,12 +21,10 @@ alias zathuraconfig="vim ~/.config/zathura/zathurarc"
 alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias cpr='cp -r'
 
 #some ssh stuff
-alias cubu="ssh -X felix@192.168.178.82"   #locally connect to my pc
 alias elwe="ssh -X fsteinme@elwe3.rhrk.uni-kl.de"   #locally connect to my pc
-alias cwskl="ssh -X hiwi@131.246.27.74"   #connect to the workstation at wskl
-
 
 # navigation and general terminal stuff
 alias ..='cd ..'
