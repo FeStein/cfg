@@ -70,6 +70,7 @@ Plug 'vim-syntastic/syntastic'              "syntax checking
 Plug 'neovimhaskell/haskell-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'morhetz/gruvbox'
 "Plug 'ycm-core/YouCompleteMe'               "yeah get me an IDE
 call plug#end()
 
@@ -78,8 +79,9 @@ call plug#end()
 "YouCompleteMe
 let g:ycm_key_list_stop_completion = ['<CR>']
 
-colorscheme codedark                        "vscode dark style
-"colorscheme nord
+"colorscheme codedark                        "vscode dark style
+colorscheme gruvbox
+set background=dark    " Setting dark mode
 
 let vim_markdown_preview_github=1           "to use grip for markdown preview
 let vim_markdown_preview_browser='Google Chrome'
@@ -172,8 +174,7 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " Markdown
 autocmd FileType markdown setlocal spell
-autocmd FileType markdown setlocal tw=80
-
+"autocmd FileType markdown setlocal tw=80
 
 " Latex
 autocmd FileType tex setlocal spell
