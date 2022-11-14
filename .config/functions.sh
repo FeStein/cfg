@@ -33,7 +33,7 @@ function lqn {
         else
             fn=$1
     fi
-    if [[ -f "$OBSIDIAN_PATH/1uicknotes/$fn.md" ]]; then
+    if [[ -f "$OBSIDIAN_PATH/Quicknotes/$fn.md" ]]; then
         lw_editor "$OBSIDIAN_PATH/Quicknotes/$fn.md"
     else
         echo "Copy quicknote template from templates folder"
