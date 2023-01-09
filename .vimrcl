@@ -1,0 +1,105 @@
+" =============================================================================
+"  # Editor Settings
+" =============================================================================
+
+" some graphical stuff
+syntax on
+set autoread
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set relativenumber
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set incsearch
+set colorcolumn=80   "sets vertical line at 80 characters
+
+set autowriteall    "aut safe when changing buffers
+
+"normal behavior of backspace
+set backspace=indent,eol,start
+
+" Sane splits
+set splitright
+set splitbelow
+
+" Permanent undo
+set undodir=~/.vimdid
+set undofile
+
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+"always show status line
+set laststatus=2
+
+" set updatetime to 100ms instead of default 4000ms -> affects git for example
+set updatetime=100
+
+" concno
+nnoremap <C-o> <nop>
+inoremap <C-o> <nop>
+nnoremap <C-i> <nop>
+inoremap <C-i> <nop>
+
+" remap W to w, in case of wrong captial letter
+:command W w
+:command Q q
+
+" =============================================================================
+"  # Remapping of Keys
+" =============================================================================
+" Ctrl+j and Ctrl+k as Esc -> Ctrl is mapped to caps lock via magnet/ ducky
+" software
+nnoremap <C-j> <Esc>
+inoremap <C-j> <Esc>
+vnoremap <C-j> <Esc>
+snoremap <C-j> <Esc>
+xnoremap <C-j> <Esc>
+cnoremap <C-j> <C-c>
+onoremap <C-j> <Esc>
+lnoremap <C-j> <Esc>
+tnoremap <C-j> <Esc>
+
+nnoremap <C-k> <Esc>
+inoremap <C-k> <Esc>
+vnoremap <C-k> <Esc>
+snoremap <C-k> <Esc>
+xnoremap <C-k> <Esc>
+cnoremap <C-k> <C-c>
+onoremap <C-k> <Esc>
+lnoremap <C-k> <Esc>
+tnoremap <C-k> <Esc>
+
+" No arrow keys --- force yourself to use the home row
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" =============================================================================
+"  # Some definitions for specific files
+" =============================================================================
+
+" Markdown
+autocmd FileType markdown setlocal spell
+"autocmd FileType markdown setlocal tw=80
+
+" Latex
+autocmd FileType tex setlocal spell
+autocmd FileType tex setlocal tw=80
+
+" C / C++
+autocmd FileType cpp setlocal tabstop=2 softtabstop=2
+autocmd FileType cpp setlocal shiftwidth=2
+
+autocmd FileType c setlocal tabstop=2 softtabstop=2
+autocmd FileType c setlocal shiftwidth=2
+
+"auto delete trailing white spaces
+autocmd BufWritePre * :%s/\s\+$//e
