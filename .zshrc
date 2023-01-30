@@ -21,6 +21,7 @@ alias zathuraconfig="vim ~/.config/zathura/zathurarc"
 alias p='python3'
 alias zshreload="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias fgit='/usr/bin/git --git-dir=$FEAPHOME8_2/.fgit/ --work-tree=$FEAPHOME8_2'
 alias cpr='cp -r'
 
 #some ssh stuff

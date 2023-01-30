@@ -71,6 +71,7 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
+Plug 'rudrab/vimf90'
 "Plug 'ycm-core/YouCompleteMe'               "yeah get me an IDE
 call plug#end()
 
