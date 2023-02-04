@@ -18,6 +18,8 @@ set nobackup
 set incsearch
 set colorcolumn=80   "sets vertical line at 80 characters
 
+set filetype=on
+
 set autowriteall    "aut safe when changing buffers
 
 "normal behavior of backspace
@@ -188,6 +190,11 @@ autocmd FileType cpp setlocal shiftwidth=2
 autocmd FileType c setlocal tabstop=2 softtabstop=2
 autocmd FileType c setlocal shiftwidth=2
 
+" FORTRAN
+autocmd FileType fortran setlocal tabstop=2 softtabstop=2
+autocmd FileType fortran setlocal shiftwidth=2
+autocmd FileType fortran setlocal colorcolumn=70   "sets vertical line at 70 characters
+
 "Variables for Snippets
 let g:snips_author = "Felix Steinmetz"
 let g:snips_email = "fsteinme@rhrk.uni-kl.de"
@@ -195,3 +202,7 @@ let g:snips_github = "github.com/FeStein"
 
 "auto delete trailing white spaces
 autocmd BufWritePre * :%s/\s\+$//e
+
+"FORTRAN additions
+let fortran_linter =-1
+let fortran_dep_install=3 "disable python package installation
