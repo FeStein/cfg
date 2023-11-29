@@ -14,3 +14,11 @@
 	required = true
 [init]
 	defaultBranch = master
+
+#Obsidian git has git-lfs on /urs/bin but I installed it via homebrew, so it is
+#located ad /usr/local/bin
+[filter "lfs"]
+    process = /usr/local/bin/git-lfs filter-process
+    required = true
+    clean = /usr/local/bin/git-lfs clean -- %f
+    smudge = /usr/local/bin/git-lfs smudge -- %f
