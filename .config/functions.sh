@@ -91,6 +91,15 @@ function textemplate {
     echo "Initialized empty latex template and git repo, please add remote repo"
 }
 
+function mintextemplate {
+    cp -r "$TEMPLATE_HOME/mintextemplate" "$1"
+    cd "$1"
+    git init
+    git add .
+    git commit -m"Initial commit"
+    echo "Initialized empty latex template and git repo, please add remote repo"
+}
+
 function svgcopy {
     cp -r $1 $2
     cd $2
