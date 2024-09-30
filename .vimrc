@@ -59,7 +59,7 @@ Plug 'ervandew/supertab'                    "lets use <Tab> for auto completion
 Plug 'tpope/vim-surround'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'lervag/vimtex'
-"Plug 'SirVer/ultisnips'                     "use snippets
+Plug 'SirVer/ultisnips'                     "use snippets
 Plug 'honza/vim-snippets'                   "actual snippets, seperate from the engine
 Plug 'vim-airline/vim-airline'              "status bar for vim
 Plug 'google/vim-maktaba'                   "auto syntax
